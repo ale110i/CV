@@ -1,8 +1,8 @@
 #!/bin/bash
 
-apt-get update
+sudo apt-get update
 
-apt-get install --yes --no-install-recommends \
+sudo apt-get install --yes --no-install-recommends \
     texlive-fonts-recommended \
     texlive-latex-extra \
     texlive-fonts-extra \
