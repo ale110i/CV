@@ -11,7 +11,7 @@ jobs:
       - name: checkout the repository
         uses: actions/checkout@v2
       - name: run script
-        run: chmod +x gen_pdf.sh && ./gen_pdf.sh
+        run: chmod +x gen_pdf.sh && sh gen_pdf.sh
       - name: upload pdf
         uses: actions/upload-artifact@v2
         with:
