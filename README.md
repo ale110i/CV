@@ -1,3 +1,1 @@
-# CV
-Service repository for cv pages
-
+Link for Pages: https://ale110i.github.io/CV/main.pdf
