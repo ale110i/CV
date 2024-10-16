@@ -9,11 +9,11 @@ jobs:
     name: build PDF
     steps:
       - name: checkout the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: run script
         run: chmod +x gen_pdf.sh && sh gen_pdf.sh
       - name: upload pdf
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: cv
           path: src/main.pdf
@@ -24,11 +24,11 @@ jobs:
     name: update PDF on pages
     steps:
       - name: checkout the repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: artifact
       - name: acquire cv
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: cv
       - name: upload cv to pages
